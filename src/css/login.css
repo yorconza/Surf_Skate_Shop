@@ -1,0 +1,142 @@
+/* =========================================
+   FUENTES
+   ========================================= */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+body {
+  overflow: hidden; 
+}
+
+/* =========================================
+   LADO IZQUIERDO (FORMULARIOS)
+   ========================================= */
+
+/* Inputs personalizados (fondo gris claro, sin borde) */
+.custom-input {
+  background-color: #f8f9fa;
+  border: 1px solid transparent;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  box-shadow: none !important;
+}
+
+.custom-input:focus {
+  background-color: #fff;
+  border-color: #000;
+  outline: none;
+}
+
+/* Botón negro principal (Login / Sign Up) */
+.custom-btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid #000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.custom-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Botón de Google  */
+.custom-btn-outline {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 2px;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.custom-btn-outline:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+
+::placeholder {
+  color: #adb5bd !important;
+  font-weight: 400;
+}
+
+/* =========================================
+   LADO DERECHO (IMÁGENES Y OVERLAYS)
+   ========================================= */
+
+/* Imagen para el LOGIN */
+.right-panel {
+  background-image: url('../../public/img_Sign_In.jpg'); 
+  
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  
+  /* TRUCO DE NITIDEZ */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen para el REGISTRO  */
+.right-panel-register {
+  background-image: url('../../public/img_Sign_Up.jpg'); 
+  
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  
+  /* TRUCO DE NITIDEZ */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay con degradado negro en la parte inferior */
+.overlay-black {
+  position: absolute;
+  bottom: 0;      
+  left: 0;
+  right: 0;
+  height: 50%;    
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  
+  z-index: 0;
+}
+
+
+.z-1 {
+  z-index: 1;
+}
+
+/* =========================================
+   RESPONSIVE (MÓVILES)
+   ========================================= */
+@media (max-width: 767.98px) {
+  body {
+    overflow: auto; 
+  }
+  .vh-100 {
+    min-height: 100vh !important;
+    height: auto !important;
+  }
+}
